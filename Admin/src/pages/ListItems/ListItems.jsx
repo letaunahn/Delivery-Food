@@ -26,6 +26,10 @@ const ListItems = () => {
     }
   };
 
+  useEffect(() => {
+    fetchList();
+  }, []);
+
   return (
     <div className="list add flex-col">
       <p>All Food List</p>
