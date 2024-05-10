@@ -2,7 +2,7 @@ import React from "react";
 import "./Orders.css";
 import { useState } from "react";
 
-import { axios } from "axios";
+import axios from "axios";
 
 import { url, assets } from "../../assets/assets";
 
@@ -33,6 +33,10 @@ const Orders = () => {
       await fetchAllOrders();
     }
   };
+
+  useEffect(() => {
+    fetchAllOrders();
+  }, []);
 
   return (
     <div className="order add">
