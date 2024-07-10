@@ -1,3 +1,3 @@
-frontend: npm run dev
-admin: npm run dev
+frontend: npm run dev\n
+admin: npm run dev\n
 backend: npm run server
